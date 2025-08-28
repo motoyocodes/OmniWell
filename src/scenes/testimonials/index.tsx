@@ -35,10 +35,11 @@ const Testimonials = () => {
               className="bg-action-button-primary-hover p-6 py-10 rounded-lg text-center"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
             >
               <img
+                loading="lazy"
                 src={t.image}
                 alt={t.name}
                 className="w-25 h-25 mx-auto rounded-full object-cover"

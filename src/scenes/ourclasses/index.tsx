@@ -52,8 +52,8 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           className="mx-auto w-5/6"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.3 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
@@ -81,7 +81,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
               x: {
                 repeat: Infinity,
                 repeatType: "loop",
-                duration: 30, // speed, increase for slower
+                duration: 15, // speed, increase for slower
                 ease: "linear",
               },
             }}

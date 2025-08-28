@@ -31,8 +31,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
         className="md:w-3/5"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.3 }}
         variants={{
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
@@ -53,8 +53,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           className="mt-10 basis-3/5 md:mt-0"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.3 }}
           variants={{
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },

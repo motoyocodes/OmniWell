@@ -23,8 +23,8 @@ const Home = ({ setSelectedPage }: Props) => {
             className="relative space-y-4"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.3 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
@@ -52,7 +52,7 @@ const Home = ({ setSelectedPage }: Props) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.3 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
@@ -76,14 +76,15 @@ const Home = ({ setSelectedPage }: Props) => {
           className="md:w-1/2 w-full mt-10 md:mt-0 flex md:justify-end"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.3 }}
           variants={{
             hidden: { opacity: 0, x: 50 },
             visible: { opacity: 1, x: 0 },
           }}
         >
           <img
+            loading="lazy"
             className="w-full md:max-w-lg h-100 md:max-h-[450px] object-cover rounded-xl shadow-lg"
             src={homeimage}
             alt="homePage-image"

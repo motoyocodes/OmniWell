@@ -20,6 +20,7 @@ const Class = ({ name, description, image }: Props) => {
         <p className="mt-1">{description}</p>
       </div>
       <img
+        loading="lazy"
         className="h-full object-cover w-full"
         src={image}
         alt={`${image}`}

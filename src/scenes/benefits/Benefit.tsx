@@ -15,7 +15,7 @@ const childVariants = {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 0.6,
+      duration: 0.3,
       ease: [0.42, 0, 0.58, 1] as [number, number, number, number],
     },
   },
