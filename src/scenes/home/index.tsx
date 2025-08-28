@@ -2,6 +2,7 @@ import type { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
+import { homeimage } from "@/assets/homepage";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -84,7 +85,7 @@ const Home = ({ setSelectedPage }: Props) => {
         >
           <img
             className="w-full md:max-w-lg h-100 md:max-h-[450px] object-cover rounded-xl shadow-lg"
-            src="src/assets/homepage/homeimage.jpg"
+            src={homeimage}
             alt="homePage-image"
           />
         </motion.div>

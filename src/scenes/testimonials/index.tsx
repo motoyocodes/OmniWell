@@ -1,3 +1,4 @@
+import { testimonial1, testimonial2, testimonial3 } from "@/assets/homepage";
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 
@@ -5,19 +6,19 @@ const testimonials = [
   {
     name: "Yusuf Eniola",
     feedback: "The classes are fun and effective. I feel stronger every week",
-    image: "src/assets/homepage/testimonial1.jpg",
+    image: testimonial1,
     rating: 5,
   },
   {
     name: "Ayoola Ibukunoluwa",
     feedback: "Omniwell helped me stay motivated and achieve my fitness goals",
-    image: "src/assets/homepage/testimonial2.jpg",
+    image: testimonial2,
     rating: 5,
   },
   {
     name: "Williams Faith",
     feedback: "Amazing gym environment and friendly trainers. Highly recommend",
-    image: "src/assets/homepage/testimonial3.jpg",
+    image: testimonial3,
     rating: 5,
   },
 ];
