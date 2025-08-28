@@ -31,16 +31,16 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             {/* Background OMNIWELL */}
-            <p className="absolute md:-top-16 -top-7 -left-7 md:-left-20 md:text-8xl text-5xl font-extrabold opacity-4 select-none logo-color z-0 pointer-events-none">
+            <p className="absolute md:-top-16 -top-7 -left-7 md:-left-20 lg:-top-30 lg-left-30 md:text-8xl text-5xl font-extrabold opacity-4 select-none logo-color z-0 pointer-events-none">
               OMNIWELL
             </p>
-            <h1 className="relative md:text-5xl text-4xl font-extrabold logo-color z-10">
+            <h1 className="relative md:text-5xl text-4xl lg:text-7xl font-extrabold logo-color z-10">
               OMNIWELL
             </h1>
-            <h2 className="md:text-3xl text-2xl font-semibold text-gray-700">
+            <h2 className="md:text-3xl text-2xl lg:text-4xl font-semibold text-gray-700">
               Be Well. Live Omni.
             </h2>
-            <p className=" text-gray-600 leading-relaxed md:text-2xl font-light">
+            <p className=" text-gray-600 leading-relaxed md:text-2xl lg:text-4xl font-light">
               Full-body fitness and recovery. Mindfulness and mental clarity.
               Personalized wellness guidance. Supportive, inclusive community.
             </p>
@@ -73,7 +73,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
         {/* IMAGE */}
         <motion.div
-          className="md:w-1/2 w-full mt-10 md:mt-0 flex md:justify-end"
+          className="md:w-1/2 w-full mt-10 md:mt-0 flex md:justify-end "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -85,7 +85,7 @@ const Home = ({ setSelectedPage }: Props) => {
         >
           <img
             loading="lazy"
-            className="w-full md:max-w-lg h-100 md:max-h-[450px] object-cover rounded-xl shadow-lg"
+            className="w-full md:max-w-lg h-100 lg:max-h-[650px] lg:max-w-6xl md:max-h-[450px] object-cover rounded-xl shadow-lg"
             src={homeimage}
             alt="homePage-image"
           />
