@@ -31,7 +31,7 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             {/* Background OMNIWELL */}
-            <p className="absolute md:-top-16 -top-7 -left-7 md:-left-20 lg:-top-20 lg-left-30 md:text-8xl text-5xl font-extrabold opacity-4 select-none logo-color z-0 pointer-events-none">
+            <p className="absolute md:-top-16 -top-7 -left-7 md:-left-20 lg:-top-18 lg-left-30 md:text-8xl text-5xl font-extrabold opacity-4 select-none logo-color z-0 pointer-events-none">
               OMNIWELL
             </p>
             <h1 className="relative md:text-5xl text-4xl lg:text-7xl font-extrabold logo-color z-10">
@@ -85,7 +85,7 @@ const Home = ({ setSelectedPage }: Props) => {
         >
           <img
             loading="lazy"
-            className="w-full md:max-w-lg h-100 lg:max-h-[900px] lg:max-w-4xl md:max-h-[450px] object-cover rounded-xl shadow-lg"
+            className="w-full md:max-w-lg h-100 lg:max-h-[650px] lg:max-w-4xl md:max-h-[450px] object-cover rounded-xl shadow-lg"
             src={homeimage}
             alt="homePage-image"
           />
