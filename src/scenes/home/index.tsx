@@ -84,7 +84,7 @@ const Home = ({ setSelectedPage }: Props) => {
         >
           <img
             className="w-full md:max-w-lg h-100 md:max-h-[450px] object-cover rounded-xl shadow-lg"
-            src="src/assets/pexels-koolshooters-6246653 (1).jpg"
+            src="src/assets/homepage/homeimage.jpg"
             alt="homePage-image"
           />
         </motion.div>

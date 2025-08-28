@@ -5,19 +5,19 @@ const testimonials = [
   {
     name: "Yusuf Eniola",
     feedback: "The classes are fun and effective. I feel stronger every week",
-    image: "src/assets/testimonial1.jpg",
+    image: "src/assets/homepage/testimonial1.jpg",
     rating: 5,
   },
   {
     name: "Ayoola Ibukunoluwa",
     feedback: "Omniwell helped me stay motivated and achieve my fitness goals",
-    image: "src/assets/testimonial2.jpg",
+    image: "src/assets/homepage/testimonial2.jpg",
     rating: 5,
   },
   {
     name: "Williams Faith",
     feedback: "Amazing gym environment and friendly trainers. Highly recommend",
-    image: "src/assets/testimonial3.jpg",
+    image: "src/assets/homepage/testimonial3.jpg",
     rating: 5,
   },
 ];
