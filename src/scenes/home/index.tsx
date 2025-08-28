@@ -85,7 +85,7 @@ const Home = ({ setSelectedPage }: Props) => {
         >
           <img
             loading="lazy"
-            className="w-full md:max-w-lg h-100 md:max-h-[450px] object-cover rounded-xl shadow-lg"
+            className="w-full md:max-w-lg h-100 lg:max-w-8/12 lg:max-h-[600px] md:max-h-[450px] object-cover rounded-xl shadow-lg"
             src={homeimage}
             alt="homePage-image"
           />
