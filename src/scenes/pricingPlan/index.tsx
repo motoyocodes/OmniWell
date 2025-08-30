@@ -32,7 +32,7 @@ const pricingPlans = [
 
 const PricingPlans = () => {
   return (
-    <section id="pricing" className="py-16 mt-10">
+    <section id="pricing" className="py-16 md:mt-10">
       <div className="mx-auto w-5/6">
         <h1 className="text-3xl input-color font-w font-extrabold">
           Pricing Plans
@@ -49,7 +49,7 @@ const PricingPlans = () => {
               className=" p-6 py-8 rounded-lg flex-1 text-center bord-color"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ delay: index * 0.2 }}
             >
               <h3 className="text-2xl font-bold t-color">{plan.title}</h3>

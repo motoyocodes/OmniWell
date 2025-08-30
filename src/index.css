@@ -49,6 +49,13 @@ button:focus {
   box-shadow: 0 0 0 2px #e3342f33;
 }
 
+.topic {
+  color: var(--primary-300);
+  font-style: oblique;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .bord-color {
   border-top: 4px solid var(--primary-500);
   border-bottom: 4px solid var(--primary-500);
@@ -62,6 +69,11 @@ button:focus {
 .btn-hov:hover {
   background-color: #800e13;
   color: #fff;
+}
+
+.img-hov {
+  border-right: 2px solid var(--primary-500);
+  border-left: 2px solid var(--primary-500);
 }
 
 .t-color {
@@ -93,6 +105,12 @@ button:focus {
 .input-color {
   color: var(--primary-300);
   font-weight: 500;
+}
+
+.img-responsive {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .bg-action-button-primary {
@@ -136,6 +154,11 @@ button:focus {
 @media (min-width: 640px) {
   .text-sm-up {
     font-size: 1.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  .form-width {
+    width: 70rem;
   }
 }
 

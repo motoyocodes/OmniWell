@@ -1,12 +1,6 @@
 import type { SelectedPage, ClassType } from "@/shared/types";
 import { motion } from "framer-motion";
-import {
-  fitnessimage2,
-  fitnessimage3,
-  fii,
-  fiii,
-  fiiiii,
-} from "@/assets/ourclasses";
+import { fitnessimage2, fii, fiii, fiiiii } from "@/assets/ourclasses";
 import Class from "./Class";
 
 type Props = { setSelectedPage: (value: SelectedPage) => void };
@@ -24,12 +18,7 @@ const classes: Array<ClassType> = [
       "Transform your body with guided strength workouts that build muscle and boost confidence.",
     image: fitnessimage2,
   },
-  {
-    name: "Yoga Flow",
-    description:
-      "Find your inner calm while increasing flexibility and balance with our rejuvenating yoga classes.",
-    image: fitnessimage3,
-  },
+
   {
     name: "HIIT Express",
     description:
@@ -48,6 +37,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
   return (
     <section id="ourclasses" className="w-full bg-nav py-10">
       <motion.div onViewportEnter={() => setSelectedPage("ourclasses")}>
+        {/* Header */}
         <motion.div
           className="mx-auto w-5/6"
           initial="hidden"
@@ -59,52 +49,38 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="md-w-3/5">
-            <h1 className="text-3xl input-color font-w font-extrabold">
-              OUR CLASSES
-            </h1>
-            <p className="py-3 text-white">
+          <div className="">
+            <h1 className="text-3xl font-extrabold input-color">OUR CLASSES</h1>
+            <p className="py-3 text-white text-[16px] md:text-[20px] ">
               At Omniwell Gym, we offer a variety of classes designed to help
               you reach your fitness goals. From high-energy cardio and strength
               training sessions to calming yoga and flexibility workouts,
               there’s something for everyone. Join our expert trainers and a
               supportive community to stay motivated and make every workout
-              count!
+              count
             </p>
           </div>
         </motion.div>
-        <div className="mt-6 h-[330px] w-full overflow-hidden relative">
-          <motion.ul
-            className="flex w-max"
-            animate={{ x: ["0%", "-50%"] }} // move left 50%
-            transition={{
-              x: {
-                repeat: Infinity,
-                repeatType: "loop",
-                duration: 15, // speed, increase for slower
-                ease: "linear",
-              },
-            }}
-            whileHover={{ x: 0 }}
-          >
+
+        {/* Classes Grid */}
+        <div className="mt-6 w-full md:px-8 px-5 lg:px-10">
+          <ul className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-4 gap-6">
             {classes.map((item: ClassType, index) => (
-              <Class
+              <motion.li
                 key={`${item.name}-${index}`}
-                name={item.name}
-                description={item.description}
-                image={item.image}
-              />
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ delay: 0, duration: 0.3 }}
+              >
+                <Class
+                  name={item.name}
+                  description={item.description}
+                  image={item.image}
+                />
+              </motion.li>
             ))}
-            {/* Duplicate items for smooth loop */}
-            {classes.map((item: ClassType, index) => (
-              <Class
-                key={`${item.name}-duplicate-${index}`}
-                name={item.name}
-                description={item.description}
-                image={item.image}
-              />
-            ))}
-          </motion.ul>
+          </ul>
         </div>
       </motion.div>
     </section>

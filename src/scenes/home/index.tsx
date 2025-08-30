@@ -10,7 +10,7 @@ type Props = {
 
 const Home = ({ setSelectedPage }: Props) => {
   return (
-    <section id="home" className="py-20 md:h-screen bg-body ">
+    <section id="home" className="py-20 mt-12  bg-body ">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="flex flex-col md:flex-row items-center justify-between w-5/6 mx-auto h-full md:mt-15 mb-10"
@@ -31,16 +31,25 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             {/* Background OMNIWELL */}
-            <p className="absolute md:-top-16 -top-7 -left-7 md:-left-20 lg:-top-18 lg-left-30 md:text-8xl text-5xl font-extrabold opacity-4 select-none logo-color z-0 pointer-events-none">
+            <p
+              className="absolute -top-7 -left-7 md:-left-8 md:-top-10 
+             lg:-left-8 lg:-top-12 xl:-top-17 xl:-left-20 2xl:-top-24 2xl:-left-24 
+             md:text-6xl text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl 
+             font-extrabold opacity-4 select-none logo-color z-0
+              pointer-events-none"
+            >
               OMNIWELL
             </p>
-            <h1 className="relative md:text-5xl text-4xl lg:text-7xl font-extrabold logo-color z-10">
+            <h1 className="relative md:text-5xl 2xl:text-8xl text-4xl lg:text-6xl font-extrabold logo-color z-10">
               OMNIWELL
             </h1>
-            <h2 className="md:text-3xl text-2xl lg:text-4xl font-semibold text-gray-700">
+            <h2 className="md:text-3xl text-2xl lg:text-4xl font-semibold text-red-700">
               Be Well. Live Omni.
             </h2>
-            <p className=" text-gray-600 leading-relaxed md:text-2xl lg:text-4xl font-light">
+            <p
+              className=" text-gray-600 leading-relaxed md:text-lg 
+            lg:text-2xl 2xl:text-4xl font-light "
+            >
               Full-body fitness and recovery. Mindfulness and mental clarity.
               Personalized wellness guidance. Supportive, inclusive community.
             </p>
@@ -85,7 +94,7 @@ const Home = ({ setSelectedPage }: Props) => {
         >
           <img
             loading="lazy"
-            className="w-full md:max-w-lg h-100 lg:max-w-8/12 lg:max-h-[600px] md:max-h-[450px] object-cover rounded-xl shadow-lg"
+            className="w-full md:max-w-lg h-100 md:max-h-[450px] object-cover rounded-xl shadow-lg"
             src={homeimage}
             alt="homePage-image"
           />
@@ -95,7 +104,7 @@ const Home = ({ setSelectedPage }: Props) => {
       {/* SPONSORS */}
 
       <div>
-        <div className="flex justify-center items-center md:gap-16 gap-3 bg-nav font-medium p-5 link-color md:text-2xl ">
+        <div className="flex justify-center items-center md:gap-16 gap-3 bg-nav font-medium text-sm md:p-6 lg:mt-30 md:mt-30 p-5 link-color md:text-2xl ">
           <p>FORTUNE</p>
           <p>FORBES</p>
           <p>HEALTHLINE</p>

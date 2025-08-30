@@ -25,7 +25,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="pt-12 text-white">
+    <section id="testimonials" className="md:pt-12 pt-6 text-white">
       <div className="mx-auto w-5/6">
         <HText>What Our Members Say</HText>
         <div className="mt-10 grid md:grid-cols-3 gap-8">
@@ -35,7 +35,7 @@ const Testimonials = () => {
               className="bg-action-button-primary-hover p-6 py-10 rounded-lg text-center"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ delay: index * 0.2 }}
             >
               <img

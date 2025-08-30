@@ -46,9 +46,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
         </p>
       </motion.div>
 
-      {/* FORM AND IMAGE */}
+      {/* FORM */}
 
-      <div className="mt-8 justify-baseline gap-8 md:flex">
+      <div className="mt-8  gap-8 md:flex md:w-4xl lg:w-6xl xl:w-7xl mx-auto">
         <motion.div
           className="mt-10 basis-3/5 md:mt-0"
           initial="hidden"

@@ -42,7 +42,7 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 md:py-30">
+    <section id="benefits" className="mx-auto min-h-full w-5/6 md:py-12">
       <motion.div onViewportEnter={() => setSelectedPage("benefits")}>
         {/* HEADER */}
         <motion.div
@@ -69,10 +69,10 @@ const Benefits = ({ setSelectedPage }: Props) => {
         {/* BENEFITS */}
         <motion.div
           className="mt-5 items-center justify-between gap-8 md:flex"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 0.3 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ delay: 0, duration: 0.3 }}
           variants={container}
         >
           {benefits.map((benefit: BenefitTypes) => (
