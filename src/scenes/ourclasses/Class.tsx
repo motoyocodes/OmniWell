@@ -19,7 +19,7 @@ const Class = ({ name, description, image }: Props) => {
 
       {/* Overlay Footer for mobile */}
       <motion.div
-        className="absolute bottom-0 w-full bg-nav/20 img-hov  backdrop-blur-md shadow-lg rounded-t-lg text-white p-4 flex flex-col text-center items-center justify-center xl:hidden"
+        className="absolute bottom-0 w-full bg-nav/20 img-hov  backdrop-blur-md shadow-lg rounded-t-lg text-white p-4 flex flex-col text-center items-center justify-center lg:hidden"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
